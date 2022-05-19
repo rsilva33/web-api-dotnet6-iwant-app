@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "a9+L7/cVAqOR96gDRRMCz9fqL+jjJ/Mtm3hWLwWvje3Eg/1BP+iJVR+EEykG77KKV1bHGI593zyuj0nOahXlRQ==",
+  "dgSpecHash": "bB90emiSzHcRW8F3UyGb9uzYimLpQ4cr14+n18F4PLQl2JgKvEwg5tWASRdteBELprzbDB88BjyTeJ7jEQLBjg==",
   "success": true,
   "projectFilePath": "C:\\labs\\courses\\IWantApp\\src\\IWantApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ronal\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\ronal\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ronal\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ronal\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
