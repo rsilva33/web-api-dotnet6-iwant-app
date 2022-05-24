@@ -36,4 +36,14 @@ public class Category : Entity
                     .IsNotNullOrEmpty(EditedBy, "EditedBy");
         AddNotifications(contract);
     }
+
+    public void EditInfo(string name, bool active, string editedBy)
+    {
+        Active = active;
+        Name = name;
+        EditedBy = editedBy;
+        EditedOn = DateTime.Now;
+
+        Validade();
+    }
 }
