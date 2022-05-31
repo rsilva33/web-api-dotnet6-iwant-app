@@ -13,7 +13,7 @@ public class CategoryPost
 
     // [AllowAnonymous] Qualquer usuario possa usar esse end point
     [Authorize(Policy = "EmployeePolicy")] // Somente usuarios autenticados tem autorização para executar o end pont
-    public static IResult Action(CategoryRequest categoryRequest, HttpContext http ,ApplicationDbContext context)
+    public static async Task<IResult> Action(CategoryRequest categoryRequest, HttpContext http ,ApplicationDbContext context)
     {
         var userId = http.User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
         var category = new Category(categoryRequest.Name, userId, userId);
@@ -23,8 +23,8 @@ public class CategoryPost
            return Results.ValidationProblem(category.Notifications.ConvertToProblemDetails());
         }
 
-        context.Categories.Add(category);
-        context.SaveChanges();
+        await context.Categories.AddAsync(category);
+        await context.SaveChangesAsync();
 
         return Results.Created($"/categories/{category.Id}", category.Id);
     }
