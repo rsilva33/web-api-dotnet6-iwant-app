@@ -17,6 +17,7 @@ global using global::Microsoft.AspNetCore.Identity;
 global using global::Microsoft.AspNetCore.Mvc;
 global using global::Microsoft.AspNetCore.Routing;
 global using global::Microsoft.Data.SqlClient;
+global using global::Microsoft.EntityFrameworkCore;
 global using global::Microsoft.Extensions.Configuration;
 global using global::Microsoft.Extensions.DependencyInjection;
 global using global::Microsoft.Extensions.Hosting;
